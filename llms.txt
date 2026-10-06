@@ -1,0 +1,10 @@
+# Taipei GTA
+
+Taipei GTA (臺北狂飆) is a browser game and guide site about exploring a stylized Taipei city. The site includes a playable game at /play/, plus guides for controls, missions, maps, vehicles and landmarks.
+
+Core answers:
+- Play URL: https://taipeigta.io/play/
+- Contact: help@taipeigta.io
+- Core topic: taipei gta
+- Game type: browser-based single-player open-world experience
+- Main locations: Taipei 101, Ximending, Elephant Mountain and Taipei streets

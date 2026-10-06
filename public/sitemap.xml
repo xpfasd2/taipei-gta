@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://taipeigta.io/</loc><priority>1.0</priority></url>
+  <url><loc>https://taipeigta.io/play/</loc><priority>0.9</priority></url>
+  <url><loc>https://taipeigta.io/guides/</loc><priority>0.8</priority></url>
+  <url><loc>https://taipeigta.io/guides/getting-started/</loc><priority>0.7</priority></url>
+  <url><loc>https://taipeigta.io/guides/taipei-map/</loc><priority>0.7</priority></url>
+  <url><loc>https://taipeigta.io/guides/vehicles/</loc><priority>0.7</priority></url>
+  <url><loc>https://taipeigta.io/guides/missions/</loc><priority>0.7</priority></url>
+  <url><loc>https://taipeigta.io/maps/</loc><priority>0.7</priority></url>
+  <url><loc>https://taipeigta.io/articles/taipei-gta-city-guide/</loc><priority>0.8</priority></url>
+  <url><loc>https://taipeigta.io/about/</loc><priority>0.4</priority></url>
+  <url><loc>https://taipeigta.io/contact/</loc><priority>0.4</priority></url>
+  <url><loc>https://taipeigta.io/privacy/</loc><priority>0.2</priority></url>
+  <url><loc>https://taipeigta.io/terms/</loc><priority>0.2</priority></url>
+  <url><loc>https://taipeigta.io/cookies/</loc><priority>0.2</priority></url>
+  <url><loc>https://taipeigta.io/copyright/</loc><priority>0.2</priority></url>
+</urlset>

@@ -1,0 +1,16 @@
+<svg class="ti-logo-svg" viewBox="0 0 492 214" role="img" aria-label="臺北狂飆 去臺北狂飆" xmlns="http://www.w3.org/2000/svg">
+  <g font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei','Heiti TC',sans-serif">
+    <rect x="4" y="4" width="104" height="206" rx="3" fill="#d81f2a" stroke="#09090c" stroke-width="6"/>
+    <rect x="13.5" y="13.5" width="85" height="187" fill="none" stroke="#fff" stroke-width="2.4" opacity=".92"/>
+    <text x="56" y="95" font-size="72" font-weight="900" fill="#fff" text-anchor="middle">臺</text>
+    <text x="56" y="182" font-size="72" font-weight="900" fill="#fff" text-anchor="middle">北</text>
+    <g font-size="142" font-weight="900" stroke="#09090c" stroke-width="5" paint-order="stroke" transform="skewX(-6)">
+      <text x="146" y="141" fill="#d81f2a">狂飆</text>
+      <text x="140" y="135" fill="#fff">狂飆</text>
+    </g>
+    <rect x="126" y="160" width="232" height="46" fill="#09090c"/>
+    <text x="142" y="193" font-size="28" font-weight="800" fill="#fff" letter-spacing="7">去臺北狂飆</text>
+    <text x="370" y="179" font-size="13" font-weight="800" fill="#ff4b52" letter-spacing="3.2" font-family="'Avenir Next Condensed','Bahnschrift','DIN Condensed','Roboto Condensed','Arial Narrow',sans-serif">TAIPEI</text>
+    <text x="370" y="197" font-size="13" font-weight="800" fill="#fff" letter-spacing="3.2" font-family="'Avenir Next Condensed','Bahnschrift','DIN Condensed','Roboto Condensed','Arial Narrow',sans-serif">RUSH</text>
+  </g>
+</svg>

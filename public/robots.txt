@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /play/assets/
+Disallow: /play/avatars/
+Sitemap: https://taipeigta.io/sitemap.xml
