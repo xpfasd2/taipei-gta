@@ -1,6 +1,6 @@
 # Taipei GTA / 臺北狂飆
 
-TaipeiGTA.io is a Product Design homepage and independent browser-game guide site built around the complete local Taipei GTA runtime.
+TaipeiGTA.io is a Product Design homepage and independent browser-game guide site built around the Taipei GTA browser-game embed.
 
 ## Run locally
 
@@ -9,12 +9,12 @@ npm install
 npm run dev -- --host 0.0.0.0 --port 4174
 ```
 
-Open `http://localhost:4174/` for the SEO homepage. The full game is available at `http://localhost:4174/play/` and is embedded in the homepage's first viewport.
+Open `http://localhost:4174/` for the SEO homepage. The external game at `https://www.taipei-rush.app/` is embedded in the homepage and `/play/` wrapper; both keep the visitor on the current page and expose fullscreen only.
 
 ## Public routes
 
 - `/` — game-first homepage with iframe, guides, article preview, FAQ and trust notice
-- `/play/` — full single-player 3D runtime
+- `/play/` — fullscreen-only wrapper for `https://www.taipei-rush.app/`
 - `/guides/` — guide hub
 - `/guides/getting-started/`, `/guides/taipei-map/`, `/guides/vehicles/`, `/guides/missions/` — guide detail pages
 - `/maps/` — location guide
@@ -29,4 +29,6 @@ Contact email: `help@taipeigta.io`.
 npm run build
 ```
 
-The Vite multi-page build emits the homepage, nested content/legal routes, `/play/`, and local runtime assets. The complete game resources are served locally from `assets/`, `avatars/`, `icons/`, `splash/`, and `title/`.
+The Vite multi-page build emits the homepage, nested content/legal routes, `/play/`, and local editorial assets and the external game iframe. The site build serves local editorial assets while the play experience is loaded from the requested external game URL.
+
+

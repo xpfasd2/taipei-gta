@@ -11,18 +11,18 @@
 - Full homepage: `site-home-v2.png`.
 - Mobile homepage: `site-home-mobile.png` (390×844 CSS px, Playwright CSS scale, device scale factor 1).
 - Side-by-side comparison: `qa-direction1-comparison.png`.
-- Complete game route: `/play/` (original local runtime, verified separately).
+- Complete game route: `/play/` (fullscreen-only wrapper around `https://www.taipei-rush.app/`).
 
 ## State and scope
 
 - Homepage in the default English-first state.
-- First viewport includes the actual `/play/` game in an iframe, `Open game` and `Fullscreen` controls, a Start playing CTA, Taipei metadata, and the selected reference's red/charcoal/ivory direction.
+- First viewport includes the external `https://www.taipei-rush.app/` game in an iframe, a single `Fullscreen` control, a Start playing CTA, Taipei metadata, and the selected reference's red/charcoal/ivory direction.
 - Public routes include `/play/`, `/guides/`, guide detail pages, `/maps/`, `/articles/taipei-gta-city-guide/`, `/about/`, `/contact/`, `/privacy/`, `/terms/`, `/cookies/`, and `/copyright/`.
 
 ## Findings
 
 - No actionable P0/P1/P2 differences remain for the selected direction.
-- The implementation intentionally shows the live local game title screen inside the iframe while the reference mockup showed a gameplay frame; this follows the user's requirement that the first screen embed the real game start page.
+- The implementation intentionally shows the live external game title screen inside the iframe while the reference mockup showed a gameplay frame; this follows the user's requirement that the first screen embed the real game start page.
 - The selected direction's visual language is preserved through local Taipei 101 art, dark glass player framing, red action controls, condensed display typography, city coordinates, and guide cards.
 
 ## Fidelity surfaces
@@ -30,7 +30,7 @@
 - Fonts/typography: Barlow Condensed and DM Sans are used for the display hierarchy, metadata and body copy, with Chinese system fallbacks.
 - Spacing/layout: desktop uses a three-column hero, central player, city rail, four-card guide grid, article split, FAQ grid and trust strip; mobile collapses to player-first stacking and a single-column content rhythm.
 - Colors/tokens: charcoal, dusk mauve, ivory, Taipei red and muted gold match the selected reference and the game runtime.
-- Image quality/assets: local game screenshots and original local game assets are used; no remote image hotlinks are required for the homepage content.
+- Image quality/assets: local editorial screenshots and original site assets are used; the real game is intentionally embedded from the requested external URL.
 - Copy/content: homepage copy, long-form article, FAQ, AEO direct answers, contact email, attribution language and legal pages are present.
 
 ## SEO/AEO checks
@@ -43,17 +43,18 @@
 
 ## Interaction checks
 
-- Homepage iframe loads `/play/?menu=1&embed=1`.
-- `Open game` opens `/play/` in a new tab.
-- `Fullscreen` calls the iframe fullscreen API.
-- Start playing scrolls to the player.
+- Homepage iframe loads `https://www.taipei-rush.app/`.
+- There is no new-tab open-game action; the homepage Play, Start playing and Fullscreen controls stay on the current page.
+- Fullscreen calls the cross-origin iframe fullscreen API.
+- Start playing scrolls to the player and requests fullscreen.
 - Header navigation, guide cards, FAQ accordion, mobile menu, legal links and mail link work.
-- `/play/` remains the full single-player 3D runtime with map (`M`), phone (`T`), pause (`Esc`) and movement controls.
+- `/play/` keeps the game on the current page and exposes only the fullscreen control.
 - Desktop and 390×844 mobile layouts were captured.
 
 ## Verification
 
-- `npm run build` passes.\n- Google tag `G-PPL8S80G71` is present once per emitted HTML page, immediately after `<head>`, and the browser requested `https://www.googletagmanager.com/gtag/js?id=G-PPL8S80G71`.
+- `npm run build` passes.
+- Google tag `G-PPL8S80G71` is present once per emitted HTML page, immediately after `<head>`, and the browser requested `https://www.googletagmanager.com/gtag/js?id=G-PPL8S80G71`.
 - Multi-page build emits root, `/play/`, guide detail, article and legal HTML routes.
 - Browser console on the homepage: 0 application errors; the embedded runtime only emits its known non-blocking runtime warnings.
 
@@ -69,4 +70,6 @@
 - Replace generated article thumbnails with licensed editorial media if the site will be published commercially.
 
 final result: passed
+
+
 
