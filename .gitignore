@@ -33,3 +33,7 @@ mirror_fetch.py
 /title/
 assets_*.css
 
+*-snapshot.yml
+cloudflare-dashboard.yml
+external-iframe-home.yml
+
